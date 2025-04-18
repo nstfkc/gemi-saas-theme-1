@@ -16,6 +16,22 @@ import {
   NavigationMenuLink,
 } from "./ui/navigation-menu";
 
+const NavigationItems = () => {
+  return (
+    <>
+      <NavigationMenuItem>
+        <NavigationMenuLink>Docs</NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink>Pricing</NavigationMenuLink>
+      </NavigationMenuItem>
+      <NavigationMenuItem>
+        <NavigationMenuLink>Contact</NavigationMenuLink>
+      </NavigationMenuItem>
+    </>
+  );
+};
+
 const MobileMenu = () => {
   return (
     <Dialog>
@@ -30,15 +46,7 @@ const MobileMenu = () => {
           <div className="flex flex-col items-center justify-center h-full w-full">
             <NavigationMenu>
               <NavigationMenuList className="flex-col">
-                <NavigationMenuItem>
-                  <NavigationMenuLink>Docs</NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink>Pricing</NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink>Contact</NavigationMenuLink>
-                </NavigationMenuItem>
+                <NavigationItems />
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -50,7 +58,7 @@ const MobileMenu = () => {
 
 export const Header = () => {
   return (
-    <header className="container max-w-screen-xl mx-auto">
+    <header className="container max-w-screen-xl mx-auto py-4">
       <nav className="flex items-center justify-between p-4">
         <div>
           <a href="/" className="flex items-center gap-2">
@@ -60,16 +68,8 @@ export const Header = () => {
         </div>
         <div className="hidden lg:flex gap-4">
           <NavigationMenu>
-            <NavigationMenuList>
-              <NavigationMenuItem>
-                <NavigationMenuLink>Docs</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink>Pricing</NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink>Contact</NavigationMenuLink>
-              </NavigationMenuItem>
+            <NavigationMenuList className="gap-8">
+              <NavigationItems />
             </NavigationMenuList>
           </NavigationMenu>
         </div>
