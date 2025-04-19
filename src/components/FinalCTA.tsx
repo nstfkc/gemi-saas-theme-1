@@ -18,7 +18,7 @@ const FinalCTA = () => {
       >
         Final CTA
         <img
-          className="w-14 h-14 md:max-h-full"
+          className="w-10 h-10 sm:w-14 sm:h-14 md:h-22 md:w-22"
           src="/github_icon.svg"
           alt="github icon"
         />
