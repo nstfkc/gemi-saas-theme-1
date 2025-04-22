@@ -3,7 +3,12 @@ const SandwichImage = () => {
 };
 
 const Sandwich = () => {
-  return <div>Sandwich</div>;
+  return (
+    <div>
+      Sandwich
+      <SandwichImage />
+    </div>
+  );
 };
 
 export default Sandwich;
