@@ -1,5 +1,5 @@
-import { Facebook, Instagram } from "lucide-react";
-import Logo from "./Logo";
+import { FacebookIcon, InstagramIcon } from "lucide-react";
+import { Logo } from "./Logo";
 
 const FooterLinkGroup = ({
   title,
@@ -24,9 +24,9 @@ const FooterLinkGroup = ({
   );
 };
 
-const Footer = () => {
+export const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row md:justify-between gap-8 px-4">
+    <footer className="container max-w-screen-2xl mx-auto flex flex-col md:flex-row md:justify-between gap-8 px-4">
       <div className="h-fit">
         <Logo />
       </div>
@@ -47,14 +47,10 @@ const Footer = () => {
       </div>
       <div>
         <ul className="flex md:flex-col gap-4">
-          <Instagram />
-          <Facebook />
-          <Instagram />
-          <Facebook />
+          <InstagramIcon />
+          <FacebookIcon />
         </ul>
       </div>
     </footer>
   );
 };
-
-export default Footer;

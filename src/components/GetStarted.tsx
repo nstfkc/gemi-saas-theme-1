@@ -32,7 +32,7 @@ const StepCard = ({
   );
 };
 
-const GetStarted = () => {
+export const GetStarted = () => {
   return (
     <div className="container max-w-screen-2xl mx-auto px-2 sm:px-4 md:px-6 grid grid-cols-1 gap-8">
       <h1 className="text-black font-medium text-[40px] text-center">
@@ -62,5 +62,3 @@ const GetStarted = () => {
     </div>
   );
 };
-
-export default GetStarted;

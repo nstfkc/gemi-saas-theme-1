@@ -1,9 +1,9 @@
 import { Button } from "./ui/button";
 
-const FinalCTA = () => {
+export const FinalCTA = () => {
   return (
-    <div className="container max-w-screen-xl mx-auto flex flex-col justify-center items-center gap-8">
-      <h1 className="text-5xl sm:text-6xl md:text-8xl font-medium text-center">
+    <div className="container max-w-screen-xl mx-auto flex flex-col justify-center items-center gap-8 sm:gap-12">
+      <h1 className="text-5xl sm:text-6xl md:text-8xl font-medium text-center leading-">
         Start Building
         <br />
         <span className="font-normal text-[#0000008F]"> in Minutes</span>
@@ -14,7 +14,7 @@ const FinalCTA = () => {
       </p>
       <Button
         size="xl"
-        className="bg-[#1C59F5] flex justify-between text-2xl md:text-6xl font-semibold"
+        className="bg-[#1C59F5] flex justify-between text-2xl md:text-6xl font-semibold rounded-2xl"
       >
         Final CTA
         <img
@@ -26,5 +26,3 @@ const FinalCTA = () => {
     </div>
   );
 };
-
-export default FinalCTA;

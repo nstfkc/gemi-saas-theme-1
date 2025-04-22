@@ -6,7 +6,7 @@ export const Hero = () => {
       <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-center leading-tight">
         <span className="text-black">Launch your</span>
         <br />
-        <span className="block bg-linear-to-b from-[#000] to-[#666666] bg-clip-text text-transparent">
+        <span className="block bg-linear-to-b from-[#1c1c1c] to-[#969696] bg-clip-text text-transparent">
           SaaS faster
         </span>
       </h1>

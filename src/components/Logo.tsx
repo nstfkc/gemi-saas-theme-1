@@ -1,4 +1,4 @@
-const Logo = () => {
+export const Logo = () => {
   return (
     <>
       <div>
@@ -10,5 +10,3 @@ const Logo = () => {
     </>
   );
 };
-
-export default Logo;
