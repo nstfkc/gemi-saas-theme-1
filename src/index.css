@@ -8,7 +8,9 @@
   src: url(/inter.ttf) format("truetype");
   font-display: swap;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "inter", sans-serif;
 }

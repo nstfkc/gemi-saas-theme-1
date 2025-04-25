@@ -1,4 +1,4 @@
-import { MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Dialog,
@@ -12,7 +12,6 @@ import {
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuItem,
-  NavigationMenuTrigger,
   NavigationMenuLink,
 } from "./ui/navigation-menu";
 

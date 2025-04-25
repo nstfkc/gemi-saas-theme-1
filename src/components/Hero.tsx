@@ -3,18 +3,20 @@ import { Button } from "./ui/button";
 export const Hero = () => {
   return (
     <div className="container max-w-xl mx-auto">
-      <h1 className="text-[96px] font-bold text-center leading-tight">
+      <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold text-center leading-tight">
         <span className="text-black">Launch your</span>
         <br />
-        <span className="text-gray-700">SaaS faster</span>
+        <span className="block bg-linear-to-b from-[#1c1c1c] to-[#969696] bg-clip-text text-transparent">
+          SaaS faster
+        </span>
       </h1>
       <div className="h-8" />
-      <p className="text-2xl text-gray-500 text-center">
+      <p className="text-base sm:text-lg md:text-2xl text-gray-500 max-sm:px-2 text-center">
         Nemo enim ipsam voluptatem quia volupta sit aspernatur aut odit aut
         fugit
       </p>
       <div className="h-8" />
-      <div className="flex justify-center gap-4">
+      <div className="flex max-sm:flex-col max-sm:px-8 justify-center gap-4">
         <Button onClick={() => alert("hi")} size="lg">
           Primary Button
         </Button>
